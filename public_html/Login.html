@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!doctype html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+	<title>Findmyfare.com</title>
+	<link rel="stylesheet" href="login_css.css">
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <!--<script language="javascript" type="text/javascript" > 
+          function vaidate()
+           {
+                  var x = document.fmflogin.email.value;
+                  
+                  var y = document.fmflogin.password.value;
+                  
+                  if(x === '')
+                  {
+                     document.getElementById('error').innerHTML="Please Enter Username";
+                     return false;
+                  }
+                  if(y === '')
+                  {
+                    document.getElementById('error').innerHTML="Please Enter Password";
+                    return false;
+                  }
+           }
+        </script> -->
+</head>
+<body background="abc.jpg">
+    
+      <div id="login" >        
+          <h2>find<span style="color:#FF4000">my</span>fare.com<span style="color:#0000FF" ><b>     -    Sign In </b></span></h2>          
+                <!--<span class="fontawesome-lock"></span>-->
+		<form  name="fmflogin"   >
+                    	<fieldset>
+				<p><label for="email">E-mail address</label></p>
+                                <p><input type="email" name="email" id="email" placeholder="mail@address.com" required="required"></p> <!-- JS because of IE support; better: placeholder="mail@address.com" -->
+				<p><label for="password">Password</label></p>
+                                <p><input type="password" name="password" id="password" placeholder="password" required="required"></p>
+                                <div class="checkbox">
+                                    <label><input type="checkbox"><font color="white"> Remember me</font></label> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<a href="formoid.html">Click here to register</a>
+                                </div>                              
+                                <p><input type="submit"  class="btn btn-success" value="Submit">         <input type="reset" class="btn btn-primary" value="Cancel" > </p>
+                              
+			</fieldset>
+		</form>
+              
+     
+	</div>
+   <!-- end login -->
+</body>	
+</html>
